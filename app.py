@@ -28,7 +28,7 @@ def create():
                 password='mangos',
                 host = '71.163.107.16',
                 port = 3306,
-                database = 'realmd')
+                database = 'test')
 
             cur= conn.cursor()
 
@@ -36,7 +36,7 @@ def create():
             tobehashed= username.upper() + ':' + password.upper()
             print(tobehashed)
     
-            QUERY = "INSERT INTO account (username,password) VALUES (?, SHA1(?))"
+            QUERY = "INSERT INTO testacct (username,password) VALUES (?, SHA1(?))"
 
             try: 
                 cur.execute(QUERY, (username,tobehashed)) 
