@@ -1,3 +1,3 @@
 Flask
 Gunicorn
-mariadb
+mariadb==1.1.9
