@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    section {
+        font-family: verdana;
+        font-size: 125%;
+        text-align: center;
+        margin-top: 15%;
+        margin-bottom: 15%;
+        width: 340px;
+    }
+
+    div {
+        width: 340px;
+        margin: auto;
+        text-align: center;
+    }
+
+    label, input {
+        font-family: verdana;
+        display: block;
+    }
+
+    label {
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    input {
+        margin-bottom: 10px;
+        margin-top:10px;
+        margin:auto;
+    }
+</style>
+
+<body>
+
+    <div>
+        <section>
+            Please Enter Username and Password Bellow:
+        </section>
+        <form method="post">
+            <label for="username">Username:</label>
+            <input type="text" name="username" required minlength="2">
+
+
+            <label for="password">Password:</label>
+            <input type="text" name="password" required minlength="2">
+
+            <br />
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+{% endblock %}
